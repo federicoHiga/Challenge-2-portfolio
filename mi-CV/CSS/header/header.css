@@ -1,0 +1,111 @@
+.burger__container{
+    display: none;
+}
+
+.burger__nav{
+    display: none;
+}
+
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #173753;
+}
+
+.header__list{
+    display: flex;
+    margin: 0 20px;
+}
+
+.header__list__item{
+    padding: 20px;
+    /* background-color: rgb(255, 255, 255); */
+    background-color: #173753;
+    transition: .1s;
+    width: 100px;
+    text-align: center;
+}
+
+.header__list__item:hover{
+    background-color: #EAEAEA ;
+    background-color: #1b4353;
+}
+
+.header__link{
+    color: rgb(255, 255, 255);
+}
+
+.header__button{ 
+    background-color: #fff;
+    border: 2px;
+    color: #3B3B3B;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 16px 24px;
+    text-align: center;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    width: 150px;
+}
+  
+.header__button:hover{
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+  
+.header__button{
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+@media screen and (max-width:450px) {
+
+    .header__nav{
+        display: none;
+    }
+
+    .burger__container{
+        display: flex;
+        flex-direction: column;
+        background-color: #173753;
+    }
+
+    .burger__nav {
+        background-color: #173753;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .burger {
+        width: 30px;
+        height: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+      
+    .line {
+        width: 100%;
+        height: 2px;
+        background-color: white;
+    }
+      
+    .menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: none;
+        transition: 1.5s;
+    }
+      
+    .menu li a:hover {
+        text-decoration: underline;
+    }
+    
+} 

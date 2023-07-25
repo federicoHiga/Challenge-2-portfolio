@@ -1,0 +1,39 @@
+.aboutMe{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    background-color: #c4e8ff;
+}
+
+.aboutMe__container{
+    width: 70%;
+    padding: 40px;
+    
+}
+
+.aboutMe__title{
+    padding: 10px;
+    font-size: 30px;
+}
+
+.aboutMe__description{
+    line-height: 1.5;
+    font-size: 17px;
+    font-weight: lighter;
+    padding: 10px;
+}
+
+@media screen and (max-width:450px){
+    
+    .aboutMe{
+        margin-top:70px
+    }
+
+    .aboutMe__title{
+        font-size: 25px;
+    }
+
+    .aboutMe__description{
+        font-size: 12px;
+    }
+}
